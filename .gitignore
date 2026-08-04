@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# FEKO temporary / lock artifacts
+*.lock/
+runfeko_tmp_*
+*.pre.backup
+*.pre.runfeko.log
+*.pre.log
+
+# Generated output
+Output_ESR/
