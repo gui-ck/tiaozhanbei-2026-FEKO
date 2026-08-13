@@ -9,12 +9,12 @@ Computer: PC WIN64 EM64T MKL IMPI -- sakura
           AMD Ryzen 5 9600X 6-Core Processor             ; AuthenticAMD family 26 model 68 stepping 0 brand id 0; AVX-512 enabled processor
           1 physical CPU with a total of 12 processors found (multi-core CPU with max. 6 cores per physical CPU)
 Threads:  OpenMP threading not used
-Date:     2026-08-02 16:53:56
+Date:     2026-08-11 19:58:59
 File:     Model_real
 Memory:   Limited to physical available memory of 5.146 GByte per process
-          Installed memory 31.072 GByte, thereof free 14.721 GByte on sakura
-MD5 check:CA503F6BBA8878541CEAFFC99C4BE6D6
-MD5 total:1E6C645C17146D84119BF78D62A28406
+          Installed memory 31.072 GByte, thereof free 17.305 GByte on sakura
+MD5 check:99F881BAF462DB4E17745B27C27A9542
+MD5 total:075539586D4F70893296AD096436E15D
 Licence:  Altair HyperWorks Products
 
 MPI-lib:  Intel(R) MPI Library 2021.12 for Windows* OS
@@ -104,6 +104,18 @@ DA       3    3    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
  read from buffer:
 OF       1    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
  read from buffer:
+FE       2    1  111  191    0-6.150E+00-2.600E-01-5.000E-01 0.000E+00 2.000E-03 2.000E-03 0.000E+00 0.000E+00
+ read from buffer:
+DA       3    3    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OF       1    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+FE       2    1  111  191    0-6.100E+00-2.600E-01-5.000E-01 0.000E+00 2.000E-03 2.000E-03 0.000E+00 0.000E+00
+ read from buffer:
+DA       3    3    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OF       1    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
 FE       2  201  111    1    0-6.600E+00-2.600E-01-8.000E-02 2.000E-03 2.000E-03 0.000E+00 0.000E+00 0.000E+00
  read from buffer:
 DA       3    3    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
@@ -142,7 +154,7 @@ index  permittivity permeability   in S/m       (electric)    (magnetic)       i
  Phase in degrees:              ARG(U0) =        0.00
  Attached to port:              WirePort1
  Port at segment with label:    Outter.Ports_port2.Wire1710.WirePort1
- Absolute number of segment:    8
+ Absolute number of segment:    37
  Radius of segment in m:        5.00000E-04
  Location of the port in m:     x = -6.40500E+00, y = -2.12583E-01, z = -1.60000E-01
  Positive direction:            x =  0.00000E+00, y =  1.00000E+00, z =  0.00000E+00
@@ -155,77 +167,32 @@ index  permittivity permeability   in S/m       (electric)    (magnetic)       i
 
                All segments and metallic triangles are perfectly conducting.
 
- Distributed storage of MoM matrix for parallel version
 
-                    DISTRIBUTED STORAGE OF MATRIX
-
-   Storage scheme: 1
-   Number of rows of the matrix:                       35315
-   Number of columns of the matrix:                    35315
-   Number of rows of the process grid:                     2
-   Number of columns of the process grid:                  3
-   Block size:                                           128
-   Theoretical load in percent:                        99.96 %
-   Number of rows of local matrix:                     17664 (process 0)
-   Number of columns of local matrix:                  11776 (process 0)
-   Local memory requirement for matrix:            208011264 complex numbers
-   (corresponds to 1.550 GByte)
-
- Storage using single precision
-
- Memory requirement for MoM matrix: 35315 rows * 35315 columns = 1247149225 complex numbers in total for all processes
- For the MoM matrix, a memory of 1247149225 complex numbers is used in total for all processes (i.e. 9.292 GByte)
-
-     Per process, 1.551 GByte of memory has been allocated dynamically,
-     which corresponds to 9.302 GByte in total for all processes together
-     (peak memory usage of 1.551 GByte per process so far)
+                    READING SOLUTION COEFFICIENTS FROM FILE
 
 
-     CPU time for calculation of the MoM matrix elements:     162.903 seconds
-
-
-               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
-
-               Selected preconditioner algorithm: 1
-
-     CPU time for preconditioning:       2.819 seconds
-     Run time for preconditioning:       2.819 seconds
-
-
-               SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
-
-               Condition number of the matrix: Not available
-
-               Floating point performance for LU decomposition:
-                           520.656 GFLOPS(SP) for CPU-time     225.594 seconds
-                            86.776 GFLOPS(SP) per process
-                           520.656 GFLOPS(SP) for run-time     225.594 seconds
-                            86.776 GFLOPS(SP) per process
-
-     CPU time for solving the linear set of equations:     225.888 seconds
-     Run time for solving the linear set of equations:     225.888 seconds
 
 
                          DATA OF THE VOLTAGE SOURCE NO. 1
 
                     real part  imag. part   magnitude       phase
- Current   in A    7.5033E-08 -9.8933E-03  9.8933E-03      -90.00
- Admitt.   in A/V  7.5033E-09 -9.8933E-04  9.8933E-04      -90.00
- Impedance in Ohm  7.6660E-03  1.0108E+03  1.0108E+03       90.00
- Inductance  in H  1.0725E-06
+ Current   in A    6.8673E-08 -9.8917E-03  9.8917E-03      -90.00
+ Admitt.   in A/V  6.8673E-09 -9.8917E-04  9.8917E-04      -90.00
+ Impedance in Ohm  7.0185E-03  1.0109E+03  1.0109E+03       90.00
+ Inductance  in H  1.0727E-06
  WARNING   510: Imaginary part of the impedance is large thus the real part will be inaccurate
  WARNING  4722: It is highly recommended to use double precision accuracy (Solver Settings)
  WARNING   509: Reactive power large thus real power is inaccurate
  WARNING  4723: It is highly recommended to use double precision accuracy (Solver Settings)
 
-                         Power in Watt: 3.75164E-07
+                         Power in Watt: 3.43366E-07
 
 
                               SCATTERING PARAMETERS
 
        ports                                        magnitude          phase 
     sink source     real part   imag. part      linear      in dB     in deg.
- S     1      1   9.95117E-01  9.86911E-02   9.99999E-01   -0.0000      5.66
+ S     1      1   9.95119E-01  9.86755E-02   9.99999E-01   -0.0000      5.66
          Sum |S|^2 of these S-parameters:    9.99999E-01   -0.0000
          Reference impedance in Ohm:  5.00000E+01
 
@@ -244,7 +211,29 @@ index  permittivity permeability   in S/m       (electric)    (magnetic)       i
                 Sum of all losses:                    0.0000E+00 W
 
           Efficiency of the antenna:                    100.0000 %
-          (based on a total active power:             3.7516E-07 W)
+          (based on a total active power:             3.4337E-07 W)
+
+
+ Near field request with name: NearField_pred_1
+
+
+                              VALUES OF THE MAGNETIC FIELD STRENGTH in A/m
+                                 (total field, incident and scattered)
+
+                      Position                            HX                   HY                   HZ  
+medium    X in m       Y in m       Z in m         magn.     phase      magn.     phase      magn.     phase  
+ NOTE    34051: Output of near field results to the .out file deactivated
+
+
+ Near field request with name: NearField_pred_2
+
+
+                              VALUES OF THE MAGNETIC FIELD STRENGTH in A/m
+                                 (total field, incident and scattered)
+
+                      Position                            HX                   HY                   HZ  
+medium    X in m       Y in m       Z in m         magn.     phase      magn.     phase      magn.     phase  
+ NOTE    34051: Output of near field results to the .out file deactivated
 
 
  Near field request with name: NearField_xoy
@@ -286,40 +275,40 @@ EN       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
                     SUMMARY OF REQUIRED TIMES IN SECONDS
 
                                                    CPU-time       runtime
- Reading and constructing the geometry                0.799         0.798
- Checking the geometry                                0.065         0.066
+ Reading and constructing the geometry                0.837         0.838
+ Checking the geometry                                0.068         0.068
  Initialisation of the Green's function               0.000         0.000
  Calculation of coupling for PO/Fock                  0.000         0.000
  Transformation to equivalent sources                 0.000         0.000
  Ray launching/tracing phase of RL-GO                 0.000         0.000
  Ray tracing phase of faceted UTD                     0.000         0.000
- Calculation of matrix elements                     162.903       162.904
- Calculation of right-hand side vector                0.002         0.001
- Preconditioning system of linear equations           2.819         2.819
- Solution of the system of linear equations         225.888       225.888
+ Calculation of matrix elements                       0.000         0.000
+ Calculation of right-hand side vector                0.000         0.000
+ Preconditioning system of linear equations           0.000         0.000
+ Solution of the system of linear equations           0.000         0.000
  Calculation of characteristic modes                  0.000         0.000
- Write/Read solution coefficients (.str file)         0.017         0.017
+ Write/Read solution coefficients (.str file)         0.004         0.003
  Determination of surface currents                    0.000         0.000
- Calculation of impedances/powers/losses              0.155         0.156
+ Calculation of impedances/powers/losses              0.109         0.110
  Calculation of averaged SAR values                   0.000         0.000
  Calculation of power receiving antenna               0.000         0.000
  Calculation of cable coupling                        0.000         0.000
  Calculation of error estimates                       0.000         0.000
  Calculation of electric near field                   0.000         0.000
- Calculation of magnetic near field                 181.966       181.966
+ Calculation of magnetic near field                 285.596       285.595
  Calculation of far field                             0.000         0.000
-                                    other             0.227         0.226
+                                    other             0.054         0.054
                                                ------------  ------------
-                                 total times:       574.841       574.841
-                       (total times in hours:         0.160         0.160)
+                                 total times:       286.668       286.668
+                       (total times in hours:         0.080         0.080)
 
  Specified CPU-times are referring to the master process only
- Sum of the CPU-times of all processes:      3449.046 seconds (     0.958 hours)
- On average per process:                      574.841 seconds (     0.160 hours)
+ Sum of the CPU-times of all processes:      1720.004 seconds (     0.478 hours)
+ On average per process:                      286.667 seconds (     0.080 hours)
 
- Peak memory usage during the whole solution: 1.554 GByte
+ Peak memory usage during the whole solution: 3.550 MByte
  (refers to the master process only)
- Sum of the peak memory of all processes:     9.315 GByte
- On average per process:                      1.553 GByte
+ Sum of the peak memory of all processes:     21.226 MByte
+ On average per process:                      3.538 MByte
 
-Finished: 2026-08-02 17:03:31
+Finished: 2026-08-11 20:03:45

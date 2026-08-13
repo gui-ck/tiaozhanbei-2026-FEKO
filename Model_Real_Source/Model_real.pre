@@ -41,6 +41,16 @@ FR:  :  :  :  :  : 150000000
 NC: StandardConfiguration1
 DA: 0 : 0 : 0 : 0 : 0 : 0 : 0 : 0 : 0 : 0 :  : 0
 
+** Near field: NearField_pred_1
+DA: 3 : 3 : 0 : 0 : 0 : 0 : 0 : 0 : 0 : 0 :  : 0
+OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
+FE: 2 : 1 : 111 : 191 : 0 : -6.15 : -0.26 : -0.5 : 0 : 0.002 : 0.002   ** NearField_pred_1
+
+** Near field: NearField_pred_2
+DA: 3 : 3 : 0 : 0 : 0 : 0 : 0 : 0 : 0 : 0 :  : 0
+OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
+FE: 2 : 1 : 111 : 191 : 0 : -6.1 : -0.26 : -0.5 : 0 : 0.002 : 0.002   ** NearField_pred_2
+
 ** Near field: NearField_xoy
 DA: 3 : 3 : 0 : 0 : 0 : 0 : 0 : 0 : 0 : 0 :  : 0
 OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
@@ -59,4 +69,4 @@ FE: 2 : 1 : 111 : 191 : 0 : -6.2 : -0.26 : -0.5 : 0 : 0.002 : 0.002   ** NearFie
 ** End of file
 EN
 
-** CADFEKO Checksum: 1c16c209ac15905ab2eb02265fb11485
+** CADFEKO Checksum: e8b324dbd882576122149543c8218178

@@ -18,3 +18,8 @@ runfeko_tmp_*
 
 # Generated output
 Output_ESR/
+Results/
+
+# New pipeline temporary FEKO cases
+Model_EQ_Surce/tenv_full_*
+Model_EQ_Surce/Model_pred_validation*
